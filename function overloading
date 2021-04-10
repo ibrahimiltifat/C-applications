@@ -32,6 +32,7 @@ struct Vector
 
     // Write a destructor that frees the allocated memory when the instance is destroyed.
     ~Vector()
+    
     {
         delete[] values;
         values = nullptr; // better safe than sorry
